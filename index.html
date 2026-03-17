@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amanah Knoxville</title>
+
+  <meta
+    name="description"
+    content="Amanah Knoxville is a nonprofit organization supporting authentic Islamic scholarship and community guidance in Knoxville."
+  />
+
+  <style>
+    :root {
+      --green: #1f6f4a;
+      --green-dark: #16533a;
+      --gold: #c9a44c;
+      --bg-top: #f7f5f0;
+      --bg-bottom: #f1efe9;
+      --text: #1f2937;
+      --muted: #5f6875;
+      --border: #ece9e2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f8f7f3 0%, #f4f2ec 100%);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(201,164,76,0.08), transparent 70%);
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo-img {
+      width: 280px;
+      max-width: 95%;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      color: var(--green-dark);
+      font-weight: 700;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #1f6f4a, #16533a);
+      color: white;
+      box-shadow: 0 8px 20px rgba(31, 111, 74, 0.25);
+    }
+
+    .btn-secondary {
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--green-dark);
+    }
+
+    /* DIVIDER */
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #ddd8cc, transparent);
+      margin: 30px auto;
+      max-width: 700px;
+    }
+
+    /* MAIN */
+    main {
+      padding: 20px 0 50px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--green-dark);
+    }
+
+    .label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .value {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .notice {
+      margin-top: 15px;
+      padding: 12px;
+      background: #fffdf7;
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+
+      <img src="logo.png" alt="Amanah Knoxville Logo" class="logo-img" />
+
+      <h1>Amanah Knoxville</h1>
+
+      <p class="tagline">
+        Supporting authentic Islamic scholarship and community guidance in Knoxville.
+      </p>
+
+      <div class="cta">
+        <a href="https://www.zeffy.com/en-US/donation-form/support-your-favorite-scholar" target="_blank" class="btn btn-primary">
+          Support This Effort
+        </a>
+
+        <a href="#support" class="btn btn-secondary">
+          View Donation Options
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container">
+      <div class="grid">
+
+        <div class="card">
+          <h2>About Amanah Knoxville</h2>
+          <p>
+            Amanah Knoxville is a nonprofit organization dedicated to supporting
+            authentic Islamic knowledge, scholarship, and community benefit.
+          </p>
+          <p>
+            Through collective effort, we aim to preserve and strengthen access
+            to beneficial knowledge for our families and community.
+          </p>
+        </div>
+
+        <div class="card" id="support">
+          <h2>Support This Effort</h2>
+
+          <div>
+            <div class="label">Zelle</div>
+            <div class="value">finance@amanahknoxville.org</div>
+          </div>
+
+          <br>
+
+          <div>
+            <div class="label">Online Donation</div>
+            <div class="value">
+              <a href="https://www.zeffy.com/en-US/donation-form/support-your-favorite-scholar" target="_blank">
+                Donate via Zeffy
+              </a>
+            </div>
+          </div>
+
+          <div class="notice">
+            Even small contributions can help sustain this effort and become a source of ongoing reward.
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Our Mission</h2>
+          <ul>
+            <li>Support authentic Islamic scholarship</li>
+            <li>Strengthen community through knowledge</li>
+            <li>Promote sincerity, trust, and responsibility</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Contact</h2>
+          <p class="value">finance@amanahknoxville.org</p>
+          <p>Please keep this effort in your duas and share with others.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <strong>Amanah Knoxville</strong><br />
+    Preserving knowledge. Strengthening community.
+  </footer>
+
+</body>
+</html>
